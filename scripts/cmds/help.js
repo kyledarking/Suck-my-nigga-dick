@@ -12,7 +12,7 @@ const doNotDelete = "[ 🤖 | Artificial Intelligence]";
 
 module.exports = {
 	config: {
-		name: "help",
+		name: "help2",
 		version: "1.18",
 		author: "NTKhang",
 		countDown: 5,
