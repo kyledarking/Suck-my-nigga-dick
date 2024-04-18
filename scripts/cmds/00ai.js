@@ -29,7 +29,7 @@ module.exports = {
       const prompt = event.body.substring(prefix.length).trim();
 
       if (!prompt) {
-        const defaultMessage = getCenteredHeader("Mark AI | 🤖") + "\n" + horizontalLine + "\nHello! Ask me anything!\n\nContact my owner if you have any questions or need assistance.\nFb Link:https://www.facebook.com/markflurry.25\n" + horizontalLine;
+        const defaultMessage = getCenteredHeader("KYLE AI | 🤖") + "\n" + horizontalLine + "\nHello! Ask me anything!\n\nContact my owner if you have any questions or need assistance.\nFb Link:https://www.facebook.com/markflurry.25\n" + horizontalLine;
         await message.reply(defaultMessage);
         return;
       }
@@ -37,7 +37,7 @@ module.exports = {
       const answer = await getGPTResponse(prompt);
 
       // Adding header and horizontal lines to the answer
-      const answerWithHeader = getCenteredHeader("Mark AI | 🤖") + "\n" + horizontalLine + "\n" + answer + "\n" + horizontalLine;
+      const answerWithHeader = getCenteredHeader("KYLE AI | 🤖") + "\n" + horizontalLine + "\n" + answer + "\n" + horizontalLine;
 
       await message.reply(answerWithHeader);
     } catch (error) {
